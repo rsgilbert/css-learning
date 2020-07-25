@@ -3,10 +3,15 @@ body {
 }
 
 h1 {
-    color: #2f4f4f;
+    color: green;
     margin-bottom: 10px;
+    font-weight: lighter;
+    font-style: italic;
 }
 
+.title {
+    font: 32px Helvetica, Arial, sans-serif;
+}
 .nav {
     margin-top: 10px;
     list-style: none;
@@ -23,10 +28,12 @@ h1 {
     padding: 5px;
     border-radius: 2px;
     text-decoration: none;
+    padding: 5px 15px;
 }
 
 .nav .featured {
     background-color: orange;
+    box-shadow: 5px 2.9px #6f9090;
 }
 a:link {
     color: blue;
