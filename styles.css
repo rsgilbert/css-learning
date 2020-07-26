@@ -1,69 +1,32 @@
-body {
-    font-family: sans-serif;
+:root {
+    font-size: 0.75em;
 }
 
-h1 {
-    color: green;
-    margin-bottom: 10px;
-    font-weight: lighter;
-    font-style: italic;
+@media(min-width: 800px) {
+    :root {
+        font-size: 0.875em;
+    }
 }
 
-.title {
-    font: 32px Helvetica, Arial, sans-serif;
+@media(min-width: 1200px) {
+    :root {
+        font-size: 1em;
+    }
 }
-.nav {
-    margin-top: 10px;
-    list-style: none;
-    padding-left: 0;
-}
-
-.nav li {
-    display: inline-block;
-}
-
-.nav a {
-    color: white;
-    background-color: #13a4a4;
-    padding: 5px;
-    border-radius: 2px;
-    text-decoration: none;
-    padding: 5px 15px;
+.panel {
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid #999;
+    font-size: 1rem;
 }
 
-.nav .featured {
-    background-color: orange;
-    box-shadow: 5px 2.9px #6f9090;
-}
-a:link {
-    color: blue;
-    text-decoration: none;
+.panel > h2 {
+    margin-top: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-a:visited {
-    color: teal;
+.panel.large-panel {
+    font-size: 1.2rem;
 }
-
-a:hover {
-    text-decoration: underline;
-    color: yellow;
-}
-
-a:active {
-    color: red;
-}
-
-.footer {
-    color: #666;
-    background-color: #ccc;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 14px;
-}
-
-.footer a {
-    text-decoration: underline;
-    color: inherit;
-}
-
-
