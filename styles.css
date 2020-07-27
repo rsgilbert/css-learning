@@ -1,12 +1,16 @@
 :root {
-    font-size: calc(0.5em + 1vw);
+    --main-bg: #fff;
+    --main-color: #000;
+    font-size: calc(0.7em + 1vw);
 }
 
 .panel {
-    padding: 1em;
-    border-radius: 0.5em;
-    border: 1px solid #999;
     font-size: 1rem;
+    padding: 1em;
+    border: 1px solid #999;
+    background-color: var(--main-bg);
+    color: var(--main-color);
+
 }
 
 .panel > h2 {
@@ -16,6 +20,10 @@
     text-transform: uppercase;
 }
 
-.panel.large-panel {
-    font-size: 1.2rem;
+.dark {
+    --main-bg: #333;
+    --main-color: #ffffff;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #999;
 }
