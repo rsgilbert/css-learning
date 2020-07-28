@@ -22,3 +22,12 @@
         </div>
     </aside>
 </body>
+
+<script type="text/javascript">
+    var rootElement = document.documentElement
+    var styles = getComputedStyle(rootElement)
+    var mainColor = styles.getPropertyValue('--main-bg')
+    console.log(mainColor)
+    console.log(String(mainColor).trim())
+    rootElement.style.setProperty('--main-bg', '#cdf')
+</script>
