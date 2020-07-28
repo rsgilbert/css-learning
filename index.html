@@ -5,29 +5,29 @@
 </head>
 
 <body>
-    <div class="panel">
-        <h2>Single-orange</h2>
-        <div class="panel-body">
-            Something to know about the line height is hat it accepts both units and unitless values. 
-            Jarrett Foster is Associate Director of Enrollment Management  
-        </div>
+    <header>
+        <h1>Franklin Running Club</h1>
+    </header>
+    <div class="container">
+        <main class="main">
+            <h2>Come join us!</h2>
+            <p>
+                The Franklin Running Club meets at 6:00pm evening at 
+                every thursday at the town square. Runs are three to five
+                miles at your own pace.
+            </p>
+        </main>
+        <aside class="sidebar">
+            <a href="/twitter" class="button-link">
+                Follow us on twitter
+            </a>
+            <a href="/facebook" class="button-link">
+                Like us on FaceBook
+            </a>
+            <a href="/sponsors" class="sponsor">
+                Become a sponsor
+            </a>
+        </aside>
+        
     </div>
-    <aside class="dark">
-        <div class="panel">
-            <h2>Single-orange</h2>
-            <div class="panel-body">
-                Something to know about the line height is hat it accepts both units and unitless values. 
-                Jarrett Foster is Associate Director of Enrollment Management  
-            </div>
-        </div>
-    </aside>
 </body>
-
-<script type="text/javascript">
-    var rootElement = document.documentElement
-    var styles = getComputedStyle(rootElement)
-    var mainColor = styles.getPropertyValue('--main-bg')
-    console.log(mainColor)
-    console.log(String(mainColor).trim())
-    rootElement.style.setProperty('--main-bg', '#cdf')
-</script>
