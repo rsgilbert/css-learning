@@ -41,32 +41,12 @@ header {
     padding: 1em 1em;
 }
 
-.media {
-    float: left;
-    width: calc(50% - 1em);    
+.media {  
     padding: 1em;
     background-color: pink;
     border-radius: .5em;
-    margin: 0 0 1em 0;
 }
 
-.media:nth-child(2n+1) {
-    margin-right: 1em;
-}
-
-.clearfix::before,
-.clearfix::after {
-    display: table;
-    content: " ";
-}
-
-.clearfix::after {
-    clear: both;
-}
-
-.media:nth-child(odd) {
-    clear: left;
-}
 
 .media-image {
     float: left;
@@ -81,3 +61,34 @@ header {
 .media-body h4 {
     margin-top: 0;
 }
+
+.row {
+    margin-left: -0.75em;
+    margin-right: -0.75em;
+
+}
+
+.row::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+[class*="column-"] {
+    float: left;
+    padding: 0 0.75em;
+    margin-top: 0;
+}
+
+.column-1 { width: 8.3%; }
+.column-2 { width: 16.6%; }
+.column-3 { width: 25%; }
+.column-4 { width: 33.3%; }
+.column-5 { width: 41.6%; }
+.column-6 { width: 50%; }
+.column-7 { width: 58.3%; }
+.column-8 { width: 66.6%; }
+.column-9 { width: 75%; }
+.column-10 { width: 83.3%; }
+.column-11 { width: 91.6%; }
+.column-12 { width: 100%; }
