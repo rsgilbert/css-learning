@@ -1,6 +1,6 @@
 :root {
     box-sizing: border-box;
-    font-size: calc(.6em + 1vw);
+    font-size: calc(.5em + 1vw);
 }
 
 *,
@@ -48,4 +48,115 @@ body * + * {
 
 .site-nav > .nav-right {
     margin-left: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex > * + * {
+    margin-top: 0;
+    margin-left: 1em;
+}
+.tile {
+    background-color: #fff;
+    padding: 1em;
+}
+
+.column-main {
+    flex: 70%;
+    background-color: blue;;
+}
+
+.column-sidebar {
+    flex: 30%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-main2 {
+    flex: 1;
+    background: peru;
+}
+
+.column-sidebar2 {
+    flex: 0 0 100px;
+    background-color: plum;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.login {
+    flex: 1;
+}
+
+.pricing {
+    flex: 1;
+}
+
+.login-form h1 {
+    margin: 0;
+    font-size: .9em;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.login-form input:not([type=checkbox]):not([type=radio]) {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+}
+
+.login-form button {
+    margin-top: 1em;
+    border: 1px solid #cc6b5a;
+    padding: .5em 1em;
+    background-color: white;
+    cursor: pointer;
+}
+
+.centered {
+    text-align: center;
+    border: .4em solid rgb(112, 187, 152);
+}
+
+.cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cost > span {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.cost-heading {
+    text-transform: uppercase;
+}
+.cost-currency {
+    font-size: 2em;
+}
+
+.cost-dollars {
+    font-size: 4em;
+}
+
+.cost-cents {
+    align-self: start;
+    font-size: 2em;
+}
+
+.cta-button {
+    background: chocolate;
+    width: 100%;
+    color: white;
+    display: block;
+    text-decoration-line: none;
+    padding-top: .25em;
+    padding-bottom: .25em;
 }
