@@ -170,11 +170,15 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .cost > span {
-    margin-top: 0;
+    margin: 0;
     font-weight: bold;
+    
 }
 
 .cost-heading {
@@ -185,6 +189,7 @@ p {
 }
 
 .cost-dollars {
+    line-height: .9;
     font-size: 4em;
 }
 
@@ -201,4 +206,5 @@ p {
     text-decoration-line: none;
     padding-top: .25em;
     padding-bottom: .25em;
+    margin: 0;
 }
