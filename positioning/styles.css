@@ -85,9 +85,10 @@ button {
 }
 
 .dropdown-label {
-    padding: .5em 1.5em;
+    padding: .5em 3em;
     border: 1px solid #ccc;
     background-color: #eee;
+    cursor: pointer;
 }
 
 .dropdown-menu {
@@ -125,14 +126,17 @@ button {
 .submenu > li > a:hover {
     background-color: #fff;
 }
-/* .item {
-    padding: 1em;
-    border: 5px solid brown;
-    margin: 1em;
-} */
 
-.relative {
-    position: relative;
-    left: 1em;
-    top: 2em;
+.dropdown-label::after {
+    content: "";
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    border: .5em solid;
+    border-color: black transparent transparent;
+}
+
+.dropdown:hover .dropdown-label::after {
+    top: .2em;
+    border-color: transparent transparent black;
 }
