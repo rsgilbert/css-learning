@@ -49,5 +49,25 @@ button {
 
 .modal-close {
     cursor: pointer;
-    align-self: right;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    text-indent: 2em;
+    height: 2em;
+    width: 2em;
+    border: 0;
+    overflow: hidden;
+}
+
+.modal-close::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid lightcoral;
+    background-color: rgba(243, 132, 132, .8);
+    color: white;
+    border-radius: .25em;
+    padding: .25em .5em;
+    text-indent: 0;
+    content: "\00D7";
 }
