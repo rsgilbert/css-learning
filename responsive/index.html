@@ -1,4 +1,8 @@
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+    <title>Wombat Coffee Roastes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -7,21 +11,23 @@
         <h1>Wombat Coffee Roasters</h1>
         <div class="slogan">We love coffee</div>
     </div>
+
+    <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">
+            Menu
+        </button>
+        <div class="menu-dropdown">
+            <ul class="nav-menu">
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a href="/brew.html">Brew</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
-<nav class="menu" id="main-menu">
-    <button class="menu-toggle" id="toggle-menu">
-        toggle menu
-    </button>
-    <div class="menu-dropdown">
-        <ul class="nav-menu">
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/shop.html">Shop</a></li>
-            <li><a href="/menu.html">Menu</a></li>
-            <li><a href="/brew.html">Brew</a></li>
-        </ul>
-    </div>
-</nav>
+
 
 <aside id="hero" class="hero">
     Welcome to Wombat Coffee Roasters! We are passionate about our craft,
@@ -33,7 +39,7 @@
         <section class="column">
             <h2 class="subtitle">Single Origin</h2>
             <p>We have built partnerships with small farms
-                around the world t ohand-select beans at the 
+                around the world to hand-select beans at the 
             peak of season. WE then carefully roast in <a href="/batch-size.html">small batches</a></thead>
             to maximize their potential
             </p>
@@ -55,3 +61,16 @@
 
     </div>
 </main>
+
+<script>
+        console.log("Hi")
+        var button = document.getElementById('toggle-menu')
+        button.addEventListener('click', function(event) {
+            event.preventDefault()
+            var menu = document.getElementById('main-menu')
+            menu.classList.toggle('is-open')
+            console.log(menu)
+        })
+    
+</script>
+
