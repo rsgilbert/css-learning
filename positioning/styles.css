@@ -32,7 +32,8 @@ button {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, .2);
+    z-index: 1;
 }
 
 .modal-body {
@@ -45,9 +46,21 @@ button {
     background-color: white;
     overflow: auto;
     border-radius: .5em;
+    z-index: 2;
 }
 
 .modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    border-radius: .25em;
+    color: white;
+    background-color: lightcoral;
+    border: 0;
+}
+
+/* .modal-close {
     cursor: pointer;
     position: absolute;
     top: 1em;
@@ -57,9 +70,9 @@ button {
     width: 2em;
     border: 0;
     overflow: hidden;
-}
+} */
 
-.modal-close::after {
+/* .modal-close::after {
     position: absolute;
     top: 0;
     right: 0;
@@ -70,7 +83,7 @@ button {
     padding: .25em .5em;
     text-indent: 0;
     content: "\00D7";
-}
+} */
 
 .container {
     margin: 2em auto;
@@ -140,3 +153,40 @@ button {
     top: .2em;
     border-color: transparent transparent black;
 }
+
+
+.stack {
+    display: flex;
+}
+
+.item {
+    padding: 2em;
+    background: darkgoldenrod;
+    margin: 1em;
+}
+
+.item1 {
+    background-color: darkgreen;
+    margin-right: -2em;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.item2 {
+    background-color: darkmagenta;
+    margin-right: -2em;
+    margin-top: 2em;
+    margin-bottom: -1em;
+    position: relative;
+    z-index: 3;
+}
+
+.inner {
+    position: absolute;
+    right: 0;
+    top: 1em;
+    background-color: darkred;
+    padding: .5em;
+    z-index: 1000;
+}
+
