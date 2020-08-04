@@ -3,10 +3,19 @@
     font-size: calc(1vw + .6em)
 }
 
+@media(min-width: 50em) {
+    :root {
+        font-size: 1.25em;
+    }
+}
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+img { 
+    max-width: 100%;
 }
 
 body {
@@ -85,6 +94,12 @@ a:active {
     }
 }
 
+@media(min-width: 50em) {
+    .hero {
+        padding: 7em 6em;
+    }
+}
+
 main {
     padding: 1em;
 }
@@ -95,6 +110,11 @@ main {
     }
 }
 
+@media(min-width: 50em) {
+    main {
+        padding: 2em 4em;
+    }
+}
 .subtitle {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -156,7 +176,7 @@ main {
     padding-left: 0;
     border: 1px solid #ccc;
     list-style: none;
-    background-color: rgba(1, 0, 0, .75);;
+    background-color: black;
     color: white;
 }
 
@@ -167,6 +187,7 @@ main {
         padding: 0 1em;
         justify-content: space-between;
         margin-top: .5em;
+        background-color: rgba(1, 0, 0, .75);
     }
 }
 
