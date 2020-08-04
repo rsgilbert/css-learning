@@ -90,8 +90,23 @@ button {
     max-width: 1000px;
     width: 80%;
     border: 2px solid lime;
+    min-height: 100vh;
+    display: flex;
 }
 
+.col-main {
+    flex: 1 80%;
+}
+
+.col-sidebar {
+    flex: 20%;
+}
+
+.affix {
+    position: sticky;
+    top: 1em;
+
+}
 .dropdown {
     display: inline-block;
     position: relative;
